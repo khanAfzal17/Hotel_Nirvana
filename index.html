@@ -115,7 +115,7 @@
             transition: 0.5s;
         }
         #heading{
-            background-color: rgb(129, 78, 78);
+            background-color: black;
         }
         .btn{
             background-color: rgb(129, 78, 78);
@@ -166,25 +166,32 @@
                     grid-template-columns:6fr 6fr ;
                 }
             }
+            .btn-heading{
+                background-color: black;
+                color: white;
+            }
+            .btn-heading:hover{
+                background-color: white;
+            }
     </style>
 </head>
 <body class="container-fluid" onload="bodyload()">
     <div class="mt-2 btn-toolbar  justify-content-between" id="heading"> 
         <div class="btn-group"> 
-         <button class="btn  fw-bold">Niravana.</button>
+         <button class="btn btn-heading  fw-bold">Niravana.</button>
         </div> 
         <div class="btn-group">
-         <button class="btn ">
+         <button class="btn btn-heading">
              <span id="lblIcon"></span>
              <span id="lblMsg" class="fw-bold"></span>
          </button>
         </div>
         <div class="btn-group">
-         <button class="btn ">
+         <button class="btn btn-heading">
              <span class="bi bi-calendar2-date"></span>
              <span id="lblDate" class="fw-bold"> </span>
          </button>
-         <button class="btn "><span class="bi bi-clock-fill"></span> <span id="lblTime" class="fw-bold"></span></button>
+         <button class="btn btn-heading"><span class="bi bi-clock-fill"></span> <span id="lblTime" class="fw-bold"></span></button>
         </div>
      </div>
     <header>
